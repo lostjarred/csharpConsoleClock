@@ -14,11 +14,11 @@ namespace ConsoleClock
             while (true) {
                 Console.SetCursorPosition(0, 0);
                 var datetimenow = System.DateTime.Now;
-                Console.WriteLine("Greetings user,");
-                Console.WriteLine($"The time is {datetimenow.Hour}:{datetimenow.Minute}:{datetimenow.Second} On {datetimenow.Day}.{datetimenow.Month}.{datetimenow.Year}");
-                Console.WriteLine($"The time is {binstring(datetimenow.Hour)}:{binstring(datetimenow.Minute)}:{binstring(datetimenow.Second)} On {binstring(datetimenow.Day)}.{binstring(datetimenow.Month)}.{binstring(datetimenow.Year)}");
-                Console.WriteLine($"The time is {hexstring(datetimenow.Hour)}:{hexstring(datetimenow.Minute)}:{hexstring(datetimenow.Second)} On {hexstring(datetimenow.Day)}.{hexstring(datetimenow.Month)}.{hexstring(datetimenow.Year)}");
-                Console.WriteLine($"The time is {octstring(datetimenow.Hour)}:{octstring(datetimenow.Minute)}:{octstring(datetimenow.Second)} On {octstring(datetimenow.Day)}.{octstring(datetimenow.Month)}.{octstring(datetimenow.Year)}");
+                Console.WriteLine("Greetings user, Welcome to my Clock");
+                Console.WriteLine($"Normal Time> {datetimenow.Hour}:{datetimenow.Minute}:{datetimenow.Second} Date> {datetimenow.Day}.{datetimenow.Month}.{datetimenow.Year}");
+                Console.WriteLine($"Bineary Time> {binstring(datetimenow.Hour)}:{binstring(datetimenow.Minute)}:{binstring(datetimenow.Second)} Date> {binstring(datetimenow.Day)}.{binstring(datetimenow.Month)}.{binstring(datetimenow.Year)}");
+                Console.WriteLine($"Hexidecimal Time> {hexstring(datetimenow.Hour)}:{hexstring(datetimenow.Minute)}:{hexstring(datetimenow.Second)} Date> {hexstring(datetimenow.Day)}.{hexstring(datetimenow.Month)}.{hexstring(datetimenow.Year)}");
+                Console.WriteLine($"Octal Time> {octstring(datetimenow.Hour)}:{octstring(datetimenow.Minute)}:{octstring(datetimenow.Second)} Date> {octstring(datetimenow.Day)}.{octstring(datetimenow.Month)}.{octstring(datetimenow.Year)}");
             }
         }
 
