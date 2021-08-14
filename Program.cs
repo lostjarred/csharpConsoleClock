@@ -11,6 +11,7 @@ namespace ConsoleClock
         static void Main(string[] args)
         {
             Console.Clear();
+            Console.CursorVisible = false;
             while (true) {
                 Console.SetCursorPosition(0, 0);
                 var datetimenow = System.DateTime.Now;
