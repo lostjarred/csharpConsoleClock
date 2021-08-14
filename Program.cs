@@ -34,7 +34,20 @@ namespace ConsoleClock
 
         static string binstring(int input)
         {
+            return binstring(input, 8);
+        }
+
+
+        static string binstring(int input, int minlength)
+        {
             var output = Convert.ToString(input, 2);
+            if (output.Length < minlength)
+            {
+                for(int i = output.Length; i < minlength; i++)
+                {
+                    output = "0" + output;
+                }
+            }
             return output;
         }
 
