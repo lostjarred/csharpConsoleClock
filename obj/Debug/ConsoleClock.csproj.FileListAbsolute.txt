@@ -1,0 +1,7 @@
+F:\projects\dotnet\consoleclock\ConsoleClock\bin\Debug\ConsoleClock.exe.config
+F:\projects\dotnet\consoleclock\ConsoleClock\bin\Debug\ConsoleClock.exe
+F:\projects\dotnet\consoleclock\ConsoleClock\bin\Debug\ConsoleClock.pdb
+F:\projects\dotnet\consoleclock\ConsoleClock\obj\Debug\ConsoleClock.csprojAssemblyReference.cache
+F:\projects\dotnet\consoleclock\ConsoleClock\obj\Debug\ConsoleClock.csproj.CoreCompileInputs.cache
+F:\projects\dotnet\consoleclock\ConsoleClock\obj\Debug\ConsoleClock.exe
+F:\projects\dotnet\consoleclock\ConsoleClock\obj\Debug\ConsoleClock.pdb
