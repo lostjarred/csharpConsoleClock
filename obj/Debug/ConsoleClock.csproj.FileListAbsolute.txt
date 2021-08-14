@@ -5,3 +5,10 @@ F:\projects\dotnet\consoleclock\ConsoleClock\obj\Debug\ConsoleClock.csprojAssemb
 F:\projects\dotnet\consoleclock\ConsoleClock\obj\Debug\ConsoleClock.csproj.CoreCompileInputs.cache
 F:\projects\dotnet\consoleclock\ConsoleClock\obj\Debug\ConsoleClock.exe
 F:\projects\dotnet\consoleclock\ConsoleClock\obj\Debug\ConsoleClock.pdb
+F:\projects\dotnet\consoleclock\bin\Debug\ConsoleClock.exe.config
+F:\projects\dotnet\consoleclock\bin\Debug\ConsoleClock.exe
+F:\projects\dotnet\consoleclock\bin\Debug\ConsoleClock.pdb
+F:\projects\dotnet\consoleclock\obj\Debug\ConsoleClock.csprojAssemblyReference.cache
+F:\projects\dotnet\consoleclock\obj\Debug\ConsoleClock.csproj.CoreCompileInputs.cache
+F:\projects\dotnet\consoleclock\obj\Debug\ConsoleClock.exe
+F:\projects\dotnet\consoleclock\obj\Debug\ConsoleClock.pdb
