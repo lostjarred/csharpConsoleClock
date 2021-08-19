@@ -16,16 +16,16 @@ namespace ConsoleClock
                 Console.SetCursorPosition(0, 0);
                 var datetimenow = System.DateTime.Now;
                 Console.WriteLine("Greetings user, Welcome to my Clock");
-                Console.WriteLine("## Normal ##");
+                Console.WriteLine("## Normal (Base 10) ##");
                 Console.WriteLine($"Time> {datetimenow.Hour}:{datetimenow.Minute}:{datetimenow.Second}");
                 Console.WriteLine($"Date> {datetimenow.Day}.{datetimenow.Month}.{datetimenow.Year}");
-                Console.WriteLine("## Bineary ##");
+                Console.WriteLine("## Bineary (Base 2) ##");
                 Console.WriteLine($"Time> {binstring(datetimenow.Hour)}:{binstring(datetimenow.Minute)}:{binstring(datetimenow.Second)}");
                 Console.WriteLine($"Date> {binstring(datetimenow.Day)}.{binstring(datetimenow.Month)}.{binstring(datetimenow.Year)}");
-                Console.WriteLine("## Octal ##");
+                Console.WriteLine("## Octal (Base 8) ##");
                 Console.WriteLine($"Time> {octstring(datetimenow.Hour)}:{octstring(datetimenow.Minute)}:{octstring(datetimenow.Second)}");
                 Console.WriteLine($"Date> {octstring(datetimenow.Day)}.{octstring(datetimenow.Month)}.{octstring(datetimenow.Year)}");
-                Console.WriteLine("## Hexidecimal ##");
+                Console.WriteLine("## Hexidecimal (Base 16) ##");
                 Console.WriteLine($"Time> {hexstring(datetimenow.Hour)}:{hexstring(datetimenow.Minute)}:{hexstring(datetimenow.Second)}");
                 Console.WriteLine($"Date> {hexstring(datetimenow.Day)}.{hexstring(datetimenow.Month)}.{hexstring(datetimenow.Year)}");
                 
@@ -41,6 +41,7 @@ namespace ConsoleClock
         static string binstring(int input, int minlength)
         {
             var output = Convert.ToString(input, 2);
+            
             if (output.Length < minlength)
             {
                 for(int i = output.Length; i < minlength; i++)
@@ -48,6 +49,25 @@ namespace ConsoleClock
                     output = "0" + output;
                 }
             }
+            
+            var count = 0;
+            var spacer = "";
+            for (int i = 0; i < output.Length; i++)
+            {
+                if (count == 4)
+                {
+                    count = 0;
+                    spacer = spacer + " " + output[i];
+                }
+                else
+                {
+                    spacer = spacer + output[i];
+                    count = count + 1;
+                }
+                
+            }
+
+            output = spacer;
             return output;
         }
 
